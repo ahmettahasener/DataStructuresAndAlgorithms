@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DataStructures.LinkedList.DoublyLinkedList.DoublyLinkedListNode&lt;T&gt;">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAEAAAAAAAAAAAAAEAAAAAgAAAAAAA=</HashCode>
+      <FileName>LinkedList\DoublyLinkedList\DoublyLinkedListNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataStructures.LinkedList.DoublyLinkedList.DoublyLinkedList&lt;T&gt;">
+    <Position X="5.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAABAAAAAAAJAAAAAAIAAAAAAAAQAAAAACAAAAAAA=</HashCode>
+      <FileName>LinkedList\DoublyLinkedList\DoublyLinkedList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

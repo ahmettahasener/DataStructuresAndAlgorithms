@@ -2,7 +2,7 @@
 using DataStructures.LinkedList.DoublyLinkedList;
 using DataStructures.Stack;
 using System;
-
+using DataStructures.Tree.BinaryTree;
 
 namespace Apps
 {
@@ -133,27 +133,88 @@ namespace Apps
 
             #region Stack
 
-            var charset = new char[] { 'a', 'b', 'c', 'd', 'e' };
-            var stack1 = new DataStructures.Stack.Stack<char>();
-            var stack2 = new DataStructures.Stack.Stack<char>(StackType.LinkedList);
+            //var charset = new char[] { 'a', 'b', 'c', 'd', 'e' };
+            //var stack1 = new DataStructures.Stack.Stack<char>();
+            //var stack2 = new DataStructures.Stack.Stack<char>(StackType.LinkedList);
 
-            foreach (var c in charset)
+            //foreach (var c in charset)
+            //{
+            //    stack1.Push(c);
+            //    stack2.Push(c);
+            //}
+
+            //Console.WriteLine(stack1.Peek());
+            //Console.WriteLine(stack2.Peek());
+
+            //Console.WriteLine(stack1.Pop());
+            //Console.WriteLine(stack2.Pop());
+
+            //Console.WriteLine(stack1.Count);
+            //Console.WriteLine(stack2.Count);
+
+            //stack1.Clear();
+            //stack2.Clear();
+            #endregion
+
+            #region Queue
+
+            //var numbers = new int[] { 1, 2, 3 };
+            //var q1 = new DataStructures.Queue.Queue<int>();
+            //var q2 = new DataStructures.Queue.Queue<int>(DataStructures.Queue.QueueType.LinkedList);
+
+            //foreach (var number in numbers) {
+            //    q1.EnQueue(number);
+            //    q2.EnQueue(number);
+            //}
+
+            //Console.WriteLine($"Queue 1 Count: { q1.Count}");
+            //Console.WriteLine($"Queue 2 Count: { q2.Count}");
+
+            //Console.WriteLine(q1.DeQueue());
+            //Console.WriteLine(q2.DeQueue());
+
+            //Console.WriteLine($"Queue 1 Count: {q1.Count}");
+            //Console.WriteLine($"Queue 2 Count: {q2.Count}");
+
+            //Console.WriteLine(q1.Peek());
+            //Console.WriteLine(q2.Peek());
+
+            //Console.WriteLine($"Queue 1 Count: {q1.Count}");
+            //Console.WriteLine($"Queue 2 Count: {q2.Count}");
+            #endregion
+
+            #region Tree
+
+            #region BST
+
+            var BST = new DataStructures.Tree.BST.BST<int>(new int[]
             {
-                stack1.Push(c);
-                stack2.Push(c);
+                23,16,45,3,22,37,99
+            });
+
+            var listInOrder = new BinaryTree<int>().InOrder(BST.Root);
+
+            foreach (var node in listInOrder)
+            {
+                Console.Write(node + " ");
             }
+            Console.WriteLine();
+            var listPreOrder = new BinaryTree<int>().PreOrder(BST.Root);
 
-            Console.WriteLine(stack1.Peek());
-            Console.WriteLine(stack2.Peek());
+            foreach (var node in listPreOrder)
+            {
+                Console.Write(node + " ");
+            }
+            Console.WriteLine();
 
-            Console.WriteLine(stack1.Pop());
-            Console.WriteLine(stack2.Pop());
+            var listPostOrder = new BinaryTree<int>().PostOrder(BST.Root);
 
-            Console.WriteLine(stack1.Count);
-            Console.WriteLine(stack2.Count);
+            foreach (var node in listPostOrder)
+            {
+                Console.Write(node + " ");
+            }
+            #endregion
 
-            stack1.Clear();
-            stack2.Clear();
             #endregion
         }
     }

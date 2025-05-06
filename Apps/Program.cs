@@ -1,8 +1,10 @@
-﻿using DataStructures.LinkedList.SinglyLinkedList;
+﻿using System;
+using DataStructures.LinkedList.SinglyLinkedList;
 using DataStructures.LinkedList.DoublyLinkedList;
 using DataStructures.Stack;
-using System;
 using DataStructures.Tree.BinaryTree;
+using DataStructures.Heap;
+using DataStructures.Shared;
 
 namespace Apps
 {
@@ -185,37 +187,115 @@ namespace Apps
 
             #region Tree
 
-            #region BST
+            //var BST = new DataStructures.Tree.BST.BST<int>(new int[]
+            //{
+            //    23,16,45,3,22,37,99
+            //});
 
-            var BST = new DataStructures.Tree.BST.BST<int>(new int[]
-            {
-                23,16,45,3,22,37,99
-            });
+            //var listInOrder = new BinaryTree<int>().InOrder(BST.Root);
 
-            var listInOrder = new BinaryTree<int>().InOrder(BST.Root);
+            //foreach (var node in listInOrder)
+            //{
+            //    Console.Write(node + " ");
+            //}
+            //Console.WriteLine();
+            //var listPreOrder = new BinaryTree<int>().PreOrder(BST.Root);
 
-            foreach (var node in listInOrder)
-            {
-                Console.Write(node + " ");
-            }
-            Console.WriteLine();
-            var listPreOrder = new BinaryTree<int>().PreOrder(BST.Root);
+            //foreach (var node in listPreOrder)
+            //{
+            //    Console.Write(node + " ");
+            //}
+            //Console.WriteLine();
 
-            foreach (var node in listPreOrder)
-            {
-                Console.Write(node + " ");
-            }
-            Console.WriteLine();
+            //var listPostOrder = new BinaryTree<int>().PostOrder(BST.Root);
 
-            var listPostOrder = new BinaryTree<int>().PostOrder(BST.Root);
+            //foreach (var node in listPostOrder)
+            //{
+            //    Console.Write(node + " ");
+            //}
+            //Console.WriteLine();
 
-            foreach (var node in listPostOrder)
-            {
-                Console.Write(node + " ");
-            }
+            //var listInOrderNonRecursiveTraversal = new BinaryTree<int>().InOrderNonRecursiveTraversal(BST.Root);
+
+            //foreach (var node in listInOrderNonRecursiveTraversal)
+            //{
+            //    Console.Write(node + " ");
+            //}
+            //Console.WriteLine();
+
+            //var listPreOrderNonRecursiveTraversal = new BinaryTree<int>().PreOrderNonRecursiveTraversal(BST.Root);
+
+            //foreach (var node in listPreOrderNonRecursiveTraversal)
+            //{
+            //    Console.Write(node + " ");
+            //}
+            //Console.WriteLine();
+
+            //var listLevelOrderNonRecursiveTraversal = new BinaryTree<int>().LevelOrderNonRecursiveTraversal(BST.Root);
+
+            //foreach (var node in listLevelOrderNonRecursiveTraversal)
+            //{
+            //    Console.Write(node + " ");
+            //}
+            //Console.WriteLine();
+
+            //Console.WriteLine($"Min Value: {BST.FindMin(BST.Root)}");
+            //Console.WriteLine($"Max Value: {BST.FindMax(BST.Root)}");
+            //Console.WriteLine($"Find Value: {BST.Find(BST.Root,16)}");
+            //Console.WriteLine($"Depth: {DataStructures.Tree.BinaryTree.BinaryTree<int>.MaxDepth(BST.Root)}");
+            //Console.WriteLine($"Deepest Node: {DataStructures.Tree.BinaryTree.BinaryTree<int>.DeepestNode(BST.Root)}");
+            //Console.WriteLine($"Number of Leaves: {DataStructures.Tree.BinaryTree.BinaryTree<int>.NumberOfLeaves(BST.Root)}");
+            //new BinaryTree<int>().PrintPaths(BST.Root);
             #endregion
 
+            #region Heap
+
+            //var minHeap = new MinHeap<int>(new int[]
+            //{
+            //    1,4,8,7,5,10,9,11,9,6
+            //});
+
+            //var maxHeap = new MaxHeap<int>(new int[]
+            //{
+            //    1,4,8,7,5,10,9,11,9,6
+            //});
+
+            //foreach (var item in minHeap)
+            //{
+            //    Console.Write(item + " ");
+            //}
+
+            //Console.WriteLine();
+
+            //foreach (var item in maxHeap)
+            //{
+            //    Console.Write(item + " ");
+            //}
+            //Console.WriteLine();
+            //var heap1 = new BinaryHeap<int>(SortDirection.Descending,
+            //    new int[]
+            //{
+            //    1,4,8,7,5,10,9,11,9,6
+            //});
+
+            //foreach (var item in heap1)
+            //{
+            //    Console.Write(item + " ");
+            //}
+            //Console.WriteLine();
+            //var heap2 = new BinaryHeap<int>(SortDirection.Ascending,
+            //    new int[]
+            //{
+            //    1,4,8,7,5,10,9,11,9,6
+            //});
+
+            //foreach (var item in heap2)
+            //{
+            //    Console.Write(item + " ");
+            //}
             #endregion
+
+
         }
     }
 }

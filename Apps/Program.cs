@@ -295,6 +295,26 @@ namespace Apps
             //}
             #endregion
 
+            #region Set
+
+            //var disjointSet = new DataStructures.Set.DisjointSet<int>(new int[] {0,1,2,3,4,5,6});
+
+            //disjointSet.Union(5,6);
+            //disjointSet.Union(1,2);
+            //disjointSet.Union(0,2);
+
+            //for (int i = 0; i < 7; i++)
+            //{
+            //    Console.WriteLine($"Find({i}) = {disjointSet.FindSet(i)}");
+            //}
+
+            #endregion
+
+            #region Graph
+
+
+
+            #endregion
 
         }
     }

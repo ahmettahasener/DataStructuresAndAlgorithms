@@ -5,6 +5,9 @@ using DataStructures.Stack;
 using DataStructures.Tree.BinaryTree;
 using DataStructures.Heap;
 using DataStructures.Shared;
+using DataStructures.Graph;
+using DataStructures.Graph.AdjancencySet;
+
 
 namespace Apps
 {
@@ -312,8 +315,125 @@ namespace Apps
 
             #region Graph
 
+            //var graph = new Graph<char>(new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G'});
 
+            //graph.AddEdge('A', 'B');
+            //graph.AddEdge('A', 'D');
+            //graph.AddEdge('C', 'D');
+            //graph.AddEdge('C', 'E');
+            //graph.AddEdge('D', 'E');
+            //graph.AddEdge('E', 'F');
+            //graph.AddEdge('F', 'G');
 
+            //Console.WriteLine("Edge between A and B ? "+ graph.HasEdge('A','B'));
+            //Console.WriteLine("Edge between B and A ? "+ graph.HasEdge('B','A'));
+            //Console.WriteLine("Edge between B and D ? "+ graph.HasEdge('B','D'));
+            //Console.WriteLine("Edge between D and B ? "+ graph.HasEdge('D','B'));
+
+            //foreach (char vertex in graph)
+            //{
+            //    Console.WriteLine(vertex);
+            //}
+            //Console.WriteLine();
+            //foreach (var key in graph)
+            //{
+            //    Console.WriteLine(key);
+            //    foreach(var vertex in graph.GetVertex(key).Edges)
+            //    {
+            //        Console.WriteLine("   "+vertex);
+            //    }
+            //}
+
+            //Console.WriteLine($"Number of vertex in the graph: {graph.Count}");
+            //-----------------
+            //var graph = new WeightedGraph<char, double>(new char[] {'A','B','C','D'});
+
+            //Console.WriteLine("Edge between A and B ? " + graph.HasEdge('A', 'B'));
+            //Console.WriteLine("Edge between B and A ? " + graph.HasEdge('B', 'A'));
+
+            //graph.AddEdge('A', 'B',1.2);
+            //graph.AddEdge('A', 'D',2.3);
+            //graph.AddEdge('D', 'C',5.5);
+
+            //Console.WriteLine("Edge between A and B ? " + graph.HasEdge('A', 'B'));
+            //Console.WriteLine("Edge between B and A ? " + graph.HasEdge('B', 'A'));
+
+            //foreach (var vertex in graph)
+            //{
+            //    Console.WriteLine(vertex);
+            //}
+
+            //Console.WriteLine();
+
+            //foreach (char vertex in graph)
+            //{
+            //    Console.WriteLine(vertex);
+            //    foreach (char key in graph.GetVertex(vertex))
+            //    {
+            //        var node = graph.GetVertex(key);
+            //        Console.WriteLine("   " + vertex + " - " +
+            //            node.GetEdge(graph.GetVertex(vertex)).Weight<double>()
+            //            + " - " + key);
+            //    }
+            //}
+            //Console.WriteLine($"Number of vertex in the graph: {graph.Count}");
+            //-----------------
+            //var graph = new DiGraph<char>(new char[] { 'A', 'B', 'C', 'D', 'E'});
+
+            //graph.AddEdge('B', 'A');
+            //graph.AddEdge('A', 'D');
+            //graph.AddEdge('D', 'E');
+            //graph.AddEdge('C', 'D');
+            //graph.AddEdge('C', 'E');
+            //graph.AddEdge('C', 'A');
+            //graph.AddEdge('C', 'B');
+
+            //Console.WriteLine("Edge between A and B ? " + graph.HasEdge('A', 'B'));
+
+            //foreach (var key in graph)
+            //{
+            //    Console.WriteLine(key);
+            //}
+
+            //Console.WriteLine();
+
+            //foreach (var key in graph)
+            //{
+            //    Console.WriteLine(key);
+            //    foreach (var item in graph.GetVertex(key))
+            //    {
+            //        Console.WriteLine("   " + item);
+            //    }
+            //}
+            //-----------------
+
+            //var graph = new WeightedDiGraph<char, int>(new char[] { 'A', 'B', 'C', 'D', 'E'});
+
+            //graph.AddEdge('A', 'C', 12);
+            //graph.AddEdge('A', 'D', 60);
+            //graph.AddEdge('B', 'A', 10);
+            //graph.AddEdge('C', 'D', 32);
+            //graph.AddEdge('C', 'B', 20);
+            //graph.AddEdge('E', 'A', 7);
+
+            //Console.WriteLine("Edge between A and B ? " + graph.HasEdge('A', 'B'));
+            //Console.WriteLine("Edge between B and A ? " + graph.HasEdge('B', 'A'));
+
+            //Console.WriteLine();
+
+            //foreach (char vertexKey in graph)
+            //{
+            //    Console.WriteLine(vertexKey);
+            //    foreach (char key in graph.GetVertex(vertexKey))
+            //    {
+            //        var nodeU = graph.GetVertex(vertexKey);
+            //        var nodeV = graph.GetVertex(key);
+            //        var w = nodeU.GetEdge(nodeV).Weight<int>();
+            //        Console.WriteLine("   " + vertexKey + " - " +
+            //            w + " - " + key);
+            //    }
+            //}
+            //Console.WriteLine($"Number of vertex in the graph: {graph.Count}");
             #endregion
 
         }

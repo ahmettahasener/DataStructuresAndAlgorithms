@@ -7,6 +7,7 @@ using DataStructures.Heap;
 using DataStructures.Shared;
 using DataStructures.Graph;
 using DataStructures.Graph.AdjancencySet;
+using DataStructures.Graph.Search;
 
 
 namespace Apps
@@ -436,6 +437,40 @@ namespace Apps
             //Console.WriteLine($"Number of vertex in the graph: {graph.Count}");
             #endregion
 
+            #region DFS
+
+            var graph = new Graph<int>();
+
+            for (int i = 0; i <= 11; i++)
+                graph.AddVertex(i);
+
+            graph.AddEdge(0, 1);
+            graph.AddEdge(1, 4);
+            graph.AddEdge(0, 4);
+            graph.AddEdge(0, 2);
+
+            graph.AddEdge(2, 5);
+            graph.AddEdge(2, 10);
+            graph.AddEdge(10, 11);
+            graph.AddEdge(11, 9);
+            graph.AddEdge(2, 9);
+
+            graph.AddEdge(5, 7);
+            graph.AddEdge(7, 8);
+            graph.AddEdge(5, 8);
+            graph.AddEdge(5, 6);
+
+            var algorithmDFS = new DepthFirst<int>();
+
+            Console.WriteLine(algorithmDFS.Find(graph, 100)); 
+            Console.WriteLine(algorithmDFS.Find(graph, 11));
+            Console.WriteLine();
+
+            var algorithmBFS = new BreadthFirst<int>();
+            Console.WriteLine(algorithmBFS.Find(graph, 100));
+            Console.WriteLine(algorithmBFS.Find(graph, 11));
+
+            #endregion
         }
     }
 }
